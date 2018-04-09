@@ -23,8 +23,8 @@ public class P5_AvgToTwoPlaces {
 			
 			sum += nextInputValue;
 		}
-		
-		System.out.println("The average value is: " + sum / numbers);
+		double answer = sum / numbers;
+		String formattedString = String.format("%.02f", answer);
+		System.out.println("The average value is: " + formattedString);
 	}
-
 }
